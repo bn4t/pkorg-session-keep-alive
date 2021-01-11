@@ -5,12 +5,11 @@ setInterval(function() {
   .then(response => {
     if (response.ok) {
       let today = new Date();
-      today.setDate(today.getDate()+1)
-      let dateTime = today.getFullYear()+'-'+(today.getMonth()+2)+'-'+today.getDate()+' '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()
+      today.setHours(today.getHours()+3)
       localStorage.setItem('idle.timeout', today.toISOString())
     }
   })
   .catch(error => {
         console.log('error sending ping request: '+error)
   });
-}, 10 * 60 * 1000) // 10 minute
+}, 10 * 60 * 1000) // 10 minutes
