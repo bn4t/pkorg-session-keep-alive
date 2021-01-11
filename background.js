@@ -1,3 +1,5 @@
+console.log('started pkorg-session-keep-alive (https://github.com/bn4t/pkorg-session-keep-alive)')
+
 setInterval(function() {
   fetch(window.location.protocol+'//'+window.location.hostname+'/ping')
   .then(response => {
@@ -11,4 +13,4 @@ setInterval(function() {
   .catch(error => {
         console.log('error sending ping request: '+error)
   });
-}, 60 * 1000) // 1 minute
+}, 10 * 60 * 1000) // 10 minute
