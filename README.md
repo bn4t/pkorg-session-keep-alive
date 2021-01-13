@@ -1,5 +1,12 @@
 # pkorg-session-keep-alive
+
 A web extension to automatically keep the session on pkorg.ch active.
+
+## Download
+
+[<img src="https://ffp4g1ylyit3jdyti1hqcvtb-wpengine.netdna-ssl.com/addons/files/2015/11/get-the-addon.png"></img>](https://addons.mozilla.org/de/firefox/addon/pkorg-ch-keep-session-alive/)
+
+This web extension should also work in chrome, hovewer I just haven't packaged it at the moment for the chrome web extension store.
 
 ## Why?
 
